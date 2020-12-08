@@ -16,9 +16,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>战士宏大全搬运 - 绿洲-除了魔兽啥都玩!大型养老公会,长期招人.</title>
-  
-    <meta name="keywords" content="宏">
+  <title>macro - 绿洲-除了魔兽啥都玩!大型养老公会,长期招人.</title>
   
 
   
@@ -295,7 +293,7 @@
 
 <div id="pjax-data" style="display: none">
   <div id="pjax-ispage">true</div>
-  <div id="pjax-pageTitle">战士宏大全搬运</div>
+  <div id="pjax-pageTitle">macro</div>
   <div id="pjax-enable-cover">true</div>
   <div id="pjax-comment-path">none</div>
   <div id="pjax-comment-placeholder">none</div>
@@ -337,8 +335,8 @@
         
         
           <h1 class="title">
-            <a href="/2018/07/19/%E6%88%98%E5%A3%AB%E5%AE%8F%E5%A4%A7%E5%85%A8%E6%90%AC%E8%BF%90/">
-              战士宏大全搬运
+            <a href="/2020/12/08/macro/">
+              macro
             </a>
           </h1>
         
@@ -366,7 +364,7 @@
               <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Jul 19, 2018</p>
+    <p>发布于：Dec 8, 2020</p>
   </a>
 </div>
 
@@ -377,7 +375,7 @@
   <div class="new-meta-item browse leancloud">
     <a class='notlink'>
       
-      <div id="lc-pv" data-title="战士宏大全搬运" data-path="/2018/07/19/%E6%88%98%E5%A3%AB%E5%AE%8F%E5%A4%A7%E5%85%A8%E6%90%AC%E8%BF%90/">
+      <div id="lc-pv" data-title="macro" data-path="/2020/12/08/macro/">
         <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
         <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
         次浏览
@@ -398,21 +396,14 @@
     <div class="article-entry" itemprop="articleBody">
       
       
-      <p><strong>目标焦点互换</strong></p>
-<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">/cleartarget [dead] </span><br><span class="line">/clearfocus [@focus,dead] </span><br><span class="line">/tar focus </span><br><span class="line">/cleartarget [@focus,noexists] </span><br><span class="line">/targetlasttarget </span><br><span class="line">/focus </span><br><span class="line">/targetlasttarget</span><br></pre></td></tr></table></figure>
+      <p>整理一些实用的宏</p>
+<p>开启伤害/治疗数字</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;console floatingCombatTextCombatDamage 1</span><br><span class="line">&#x2F;console floatingCombatTextCombatHealing 1</span><br></pre></td></tr></table></figure>
+<p>关闭伤害/治疗数字</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;console floatingCombatTextCombatDamage 0</span><br><span class="line">&#x2F;console floatingCombatTextCombatHealing 0</span><br></pre></td></tr></table></figure>
 
-<p><strong>缴械宏</strong></p>
-<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#showtooltip 缴械 </span><br><span class="line">/stopcasting </span><br><span class="line">/cancelAura 剑刃风暴 </span><br><span class="line">/cancelAura 保护之手 </span><br><span class="line">/focus [@focus,noexists][<span class="built_in">mod</span>] </span><br><span class="line">/clearfocus [@focus,dead] </span><br><span class="line">/use 缴械</span><br></pre></td></tr></table></figure>
-
-<p><strong>致死宏</strong></p>
-<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#showtooltip 致死打击 </span><br><span class="line">/cleartarget [help] </span><br><span class="line">/cancelaura 剑刃风暴 </span><br><span class="line">/cancelAura 保护之手 </span><br><span class="line">/startattack </span><br><span class="line">/castsequence reset=<span class="number">0</span> <span class="number">0</span>,乘胜追击 </span><br><span class="line">/use 致死打击 </span><br><span class="line">/use 投掷 </span><br><span class="line">/dismount [mounted]</span><br></pre></td></tr></table></figure>
-
-<p><strong>拳击宏</strong></p>
-<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#showtooltip </span><br><span class="line">/stopcasting </span><br><span class="line">/cancelaura 剑刃风暴 </span><br><span class="line">/cancelaura 保护之手 </span><br><span class="line">/use [@mouseover,nodead,harm][]拳击</span><br></pre></td></tr></table></figure>
-
-<p><strong>斩杀</strong></p>
-<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#showtooltip 斩杀 </span><br><span class="line">/stopcasting </span><br><span class="line">/cancelaura 剑刃风暴 </span><br><span class="line">/cancelaura 保护之手 </span><br><span class="line">/startattack </span><br><span class="line">/use 斩杀</span><br></pre></td></tr></table></figure>
-
+<p>删除所有“角色宏”</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;script for i&#x3D;121,138 do DeleteMacro(i) end</span><br></pre></td></tr></table></figure>
 
       
         
@@ -429,7 +420,7 @@
                   
                 
                   
-                    <p>本文永久链接是：<a href=http://woworgs.com/2018/07/19/%E6%88%98%E5%A3%AB%E5%AE%8F%E5%A4%A7%E5%85%A8%E6%90%AC%E8%BF%90/>http://woworgs.com/2018/07/19/%E6%88%98%E5%A3%AB%E5%AE%8F%E5%A4%A7%E5%85%A8%E6%90%AC%E8%BF%90/</a></p>
+                    <p>本文永久链接是：<a href=http://woworgs.com/2020/12/08/macro/>http://woworgs.com/2020/12/08/macro/</a></p>
                   
                 
               </blockquote>
@@ -447,10 +438,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-08-26T11:33:19+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-12-08T11:47:27+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Aug 26, 2020</p>
+    <p>更新于：Dec 8, 2020</p>
   </a>
 </div>
 
@@ -458,9 +449,6 @@
       
         
           
-  
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%AE%8F/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>宏</p></a></div>
-
 
         
       
@@ -472,7 +460,7 @@
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://woworgs.com/2018/07/19/%E6%88%98%E5%A3%AB%E5%AE%8F%E5%A4%A7%E5%85%A8%E6%90%AC%E8%BF%90/&title=战士宏大全搬运 - 绿洲-除了魔兽啥都玩!大型养老公会,长期招人.&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://woworgs.com/2020/12/08/macro/&title=macro - 绿洲-除了魔兽啥都玩!大型养老公会,长期招人.&summary="
           
           >
           
@@ -484,7 +472,7 @@
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://woworgs.com/2018/07/19/%E6%88%98%E5%A3%AB%E5%AE%8F%E5%A4%A7%E5%85%A8%E6%90%AC%E8%BF%90/&title=战士宏大全搬运 - 绿洲-除了魔兽啥都玩!大型养老公会,长期招人.&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://woworgs.com/2020/12/08/macro/&title=macro - 绿洲-除了魔兽啥都玩!大型养老公会,长期招人.&summary="
           
           >
           
@@ -496,7 +484,7 @@
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://woworgs.com/2018/07/19/%E6%88%98%E5%A3%AB%E5%AE%8F%E5%A4%A7%E5%85%A8%E6%90%AC%E8%BF%90/&title=战士宏大全搬运 - 绿洲-除了魔兽啥都玩!大型养老公会,长期招人.&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://woworgs.com/2020/12/08/macro/&title=macro - 绿洲-除了魔兽啥都玩!大型养老公会,长期招人.&summary="
           
           >
           
@@ -524,22 +512,11 @@
     
       <div class="prev-next">
         
-          <a class='prev' href='/2018/07/19/%E9%AD%94%E5%85%BD%E4%B8%96%E7%95%8C%E5%AD%97%E4%BD%93%E4%BF%AE%E6%94%B9%E6%8C%87%E5%8D%97/'>
-            <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>魔兽世界字体修改指南</p>
-            <p class='content'>修改方法，将字体放置于魔兽世界根目录下的 Fonts 文件夹下，重启游戏即可，字体必须为 TrueType 格式，后缀为ttf。
-Bash 下用于自动修改字体的脚本：
-1234567891011...</p>
-          </a>
         
-        
-          <a class='next' href='/2018/07/18/%E5%85%AC%E4%BC%9A%E6%94%B6%E4%BA%BA/'>
-            <p class='title'>公会成员简介<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
-            <p class='content'>
-前排收人qq 542067171
-
-团队介绍##以下排名不分先后
-
-伐爷我是伐爷 很高兴认识大家.20年游戏玩家.前PFU玩家，现佛系养老. (错过太多绝版的坐骑幻化，有点不服)DOTA鱼塘守...</p>
+          <a class='next' href='/2018/12/24/%E5%9C%A3%E8%AF%9E%E6%B4%BB%E5%8A%A8/'>
+            <p class='title'>圣诞活动<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+            <p class='content'>绿洲圣诞特别娱乐活动
+2018年12月24日晚8点开始第一项：马拉松.新建1级兽人 取名ID：绿洲XX.地点：兽人出生地——奥格按照到达奥格后门的名次顺序.1.血色死亡战马.2.10WG.3.5...</p>
           </a>
         
       </div>
