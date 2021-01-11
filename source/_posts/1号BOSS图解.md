@@ -5,4 +5,7 @@ tags: [BFA]
 ---
 
 测试服1号BOSS图解
-![](https://raw.githubusercontent.com/leeoyfat/imgs/master/uPic/1%E5%8F%B7boss.jpg)
+![boss](https://i.imgur.com/Iv9BGq0.jpg)
+
+
+

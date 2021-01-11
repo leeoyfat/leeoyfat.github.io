@@ -12,12 +12,13 @@ https://shimo.im/sheet/OTl4Ag9Y3RU5fbvL/RIDOC/
 https://www.warcraftlogs.com/guild/id/372282   
  
 公会NGA招募帖    
-http://bbs.nga.cn/read.php?tid=14547966   
+https://bbs.nga.cn/read.php?tid=23142942
 
-幻化大赛报名帖
-https://shimo.im/sheet/b7hZWvsQ3sUzDzr2
+装备/天赋对比
+https://herodamage.com
 
 
+在线模拟
+https://www.raidbots.com
 
-dota 开黑群组（steam）
-https://s.team/chat/CHeb0UNx
+

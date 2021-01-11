@@ -5,15 +5,15 @@
 # Site
 title: 绿洲-除了魔兽啥都玩!大型养老公会,长期招人.
 subtitle: 除了魔兽世界什么都玩
-description: 绿洲公会为广大魔兽世界wow玩家提供最新的魔兽世界争霸艾泽拉斯资讯,装备思路,团本攻略,M团本,欢迎广大玩家加入绿洲,除了魔兽世界我们什么都玩！
-keywords: 绿洲,魔兽绿洲,魔兽世界,魔兽公会,8.0,8.1,围攻祖达萨开荒,开荒8.1,DPS,WCL,NGA,开荒团
+description: 为广大魔兽世界wow玩家提供最新的魔兽世界争霸艾泽拉斯资讯,装备思路,团本攻略,M团本,欢迎广大玩家加入绿洲,除了魔兽世界我们什么都玩！
+keywords: 魔兽世界,魔兽公会,9.0,魔兽测试服,暗影国度,开荒9.0,魔兽WA字符串,魔兽WCL,NGA,魔兽开荒团
 author: 
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://woworgs.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -73,13 +73,13 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hiker
+theme: volantis
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: ssh://git@blog/leeoyfat/leeoyfat.github.io.git
+  repository: https://github.com/leeoyfat/leeoyfat.github.io.git
   branch: master
 
 server:
